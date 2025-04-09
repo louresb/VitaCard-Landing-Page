@@ -1,0 +1,1079 @@
+@font-face {
+    font-family: 'Open Sans SemiBold';
+    src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Space Grotesk Bold';
+    src: url('../fonts/SpaceGrotesk-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+main {
+    flex: 1;
+}
+
+.oi .oi-menu {
+    color: #000;
+}
+
+.linha-superior {
+    background-color: #ffffff;
+    border-bottom: 1px solid #c4c4c4;
+    justify-content: space-between;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 5;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 5rem;
+    top: 0;
+    bottom: 0;
+}
+
+.imagem-logo {
+    max-height: 100%;
+    height: auto;
+    max-width: 120px;
+}
+
+.toggle-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+}
+
+.toggle-menu .oi {
+    color: #000;
+}
+
+.links-menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.links-menu a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 4.5;
+    padding: 0 1rem;
+}
+
+.links-menu a:hover {
+    text-decoration: underline;
+}
+
+.link-logo {
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.conteudo-banner {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #190649;
+}
+
+.px-4 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+.titulo {
+    font-family: 'Space Grotesk Bold', sans-serif;
+    font-size: 5vw;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.subtitulo {
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 1.4vw;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+.botao-beneficios {
+    display: flex;
+    gap: 1rem;
+}
+
+.banner-principal {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    min-height: 600px;
+}
+
+.banner-principal img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    transform: translateY(0);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.beneficios-titulo {
+    font-family: 'Space Grotesk Bold', sans-serif;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    color: #000000;
+    text-align: center;
+}
+
+.tipos-beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.tipos-beneficios-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-gap: 1.5rem;
+    text-align: center;
+    padding: 8rem;
+    padding-bottom: 0;
+    margin-top: -8rem;
+}
+
+.tipo-beneficio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 3px solid #2A55A3;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #2A55A3;
+    transition: box-shadow 0.3s ease;
+}
+
+.tipo-beneficio:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tipo-beneficio ion-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #F37335;
+}
+
+.tipo-beneficio-titulo {
+    font-family: 'Space Grotesk Bold', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+.tipo-beneficio-descricao {
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #000000;
+}
+
+.botao-planos-container {
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.botao-chamada {
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #2A55A3;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.botao-chamada:hover {
+    background-color: #1d3b71;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.imagem-destaque {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-destaque img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 15px;
+}
+
+.destaque-texto {
+    flex: 2;
+    padding-left: 2rem;
+    color: #000000;
+}
+
+.destaque-texto h2 {
+    font-family: 'Space Grotesk Bold', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.destaque-texto p {
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.botao-beneficio {
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #2A55A3;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao-beneficio:hover {
+    background-color: #1d3b71;
+}
+
+.secao-frase {
+    position: relative;
+    width: 100%;
+    height: 530px;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.imagem-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.banner-secundario {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top 20%;
+    border-radius: 15px;
+    transform: scaleX(-1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+.phrase-text {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    max-width: 36%;
+    color: white;
+    font-family: 'Space Grotesk Bold', sans-serif;
+    font-size: 3rem;
+    text-align: left;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    z-index: 1;
+}
+
+.logo-vitacard {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 200px;
+    height: auto;
+    z-index: 1;
+}
+
+.secao-planos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.planos-titulo {
+    font-family: 'Space Grotesk Bold', sans-serif;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    color: #000000;
+    grid-column: span 3;
+}
+
+.plano-cartao {
+    border: 3px solid #2A55A3;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    color: #2A55A3;
+    transition: box-shadow 0.3s ease;
+}
+
+.plano-cartao:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.plano-titulo {
+    font-family: 'Space Grotesk Bold', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2A55A3;
+}
+
+.plano-preco {
+    font-family: 'Space Grotesk Bold', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.plano-beneficios {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.plano-beneficios li {
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: #999999;
+}
+
+.botao-planos {
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border-color: #2A55A3;
+    background-color: #2A55A3;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.botao-planos:hover {
+    background-color: #1d3b71;
+    border-color: #1d3b71;
+}
+
+.secao-final {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #ffffff;
+}
+
+.secao-final h1 {
+    font-family: 'Space Grotesk Bold', sans-serif;
+    font-size: 2.7rem;
+    color: #000000;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.footer {
+    background-color: #E6E6E6;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: auto;
+}
+
+.container-footer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.logo-mag img, .logo-vitacard-ft img {
+    display: block;
+    margin: auto;
+}
+
+.logo-mag img {
+    max-width: 100px;
+    height: auto;
+}
+
+.vitacard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.logo-vitacard-ft img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 0.7rem;
+}
+
+.text-mag, .text-vitacard {
+    text-align: left;
+    margin-right: 1rem;
+}
+
+.text-mag {
+    max-width: 300px;
+}
+
+.text-vitacard {
+    max-width: 300px;
+}
+
+.text-mag p, .text-vitacard p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.text-mag p strong, .text-vitacard p strong {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    display: inline;
+}
+
+@media screen and (max-width: 1061px) {
+    .banner-principal {
+        height: 40vh;
+        min-height: 400px;
+    }
+
+    .conteudo-banner {
+        top: 2%;
+        left: 5%;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0 1rem;
+        z-index: 2;
+    }
+
+    .destaque {
+        margin-top: 0;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+
+    .imagem-destaque {
+        align-self: flex-start;
+    }
+
+    .titulo {
+        font-size: 4vw;
+    }
+
+    .subtitulo {
+        font-size: 1.2vw;
+    }
+
+    .destaque-texto h2 {
+        font-size: 2.5rem;
+    }
+
+    .destaque-texto p {
+        font-size: 1.1rem;
+    }
+
+    .beneficios-titulo h1 {
+        font-size: 3rem;
+    }
+
+    .imagem-container {
+        min-height: 400px;
+    }
+
+    .logo-vitacard {
+        display: none;
+    }
+
+    .secao-planos {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-principal {
+        height: 50vh;
+    }
+
+    .conteudo-banner {
+        top: 1%;
+        left: 5%;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        width: 100%;
+        padding: 0 1rem;
+        z-index: 2;
+    }
+
+    .destaque {
+        margin-top: -3rem;
+        z-index: 1;
+    }
+
+    .titulo {
+        font-size: 4vw;
+    }
+
+    .subtitulo {
+        font-size: 1.5vw;
+    }
+
+    .destaque-texto h2 {
+        font-size: 2.5rem;
+    }
+
+    .destaque-texto p {
+        font-size: 1.1rem;
+    }
+
+    .beneficios-titulo {
+        font-size: 4rem;
+    }
+
+    .planos-titulo {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .conteudo-banner {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        width: 100%;
+        padding: 0 1rem;
+        z-index: 2;
+    }
+
+    .titulo {
+        font-size: 3.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .subtitulo {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .botao-beneficios {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .botao-beneficio {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .banner-principal {
+        display: none;
+    }
+
+    .destaque {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .imagem-destaque {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 1rem;
+        align-self: center;
+    }
+
+    .destaque-texto {
+        padding: 0 1rem;
+        margin-bottom: 0;
+    }
+
+        .destaque-texto h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .destaque-texto p {
+            font-size: 1.2rem;
+        }
+
+    .beneficios-titulo {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+
+    .tipos-beneficios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        padding-top: 1rem;
+        padding: 1rem 2rem;
+        padding-bottom: 0;
+    }
+
+    .tipos-beneficios-center {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        text-align: center;
+        padding: 0 2rem;
+        margin-top: 1rem;
+    }
+
+    .tipo-beneficio {
+        padding: 1rem;
+        border: 3px solid #2A55A3;
+        border-radius: 1rem;
+        text-decoration: none;
+        color: #2A55A3;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .botao-chamada {
+        font-size: 0.8rem;
+    }
+
+    .botao-planos-container {
+        text-align: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .secao-frase {
+        height: 30vh;
+        padding: 1rem 0;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .imagem-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phrase-text {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        font-size: 1.8rem;
+        color: #000000;
+        width: 100%;
+        max-width: 100%;
+        text-shadow: none;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 1rem;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .banner-secundario {
+        display: none;
+    }
+
+    .logo-vitacard {
+        display: none;
+    }
+
+    .secao-planos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        padding: 0 1rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .planos-titulo {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        grid-column: span 1;
+    }
+
+    .secao-final h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .text-mag p, .text-vitacard p {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        background-color: #f0f0f0;
+    }
+
+    .toggle-menu {
+        display: block;
+        left: 2rem;
+    }
+
+    .container-logo {
+        left: 4rem;
+    }
+
+    .links-menu {
+        flex-direction: column;
+        position: absolute;
+        top: calc(100%);
+        left: 0;
+        width: 100%;
+        background-color: #E6E6E6;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        display: none;
+        z-index: 6;
+    }
+
+        .links-menu.exibir {
+            display: flex;
+        }
+
+        .links-menu a {
+            padding: 0 1rem;
+            color: #000;
+            margin: 0;
+            white-space: nowrap;
+        }
+
+            .links-menu a:hover {
+                text-decoration: underline;
+            }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-mag,
+    .text-mag,
+    .logo-vitacard-ft,
+    .text-vitacard {
+        width: 100%;
+    }
+
+    .logo-mag,
+    .logo-vitacard-ft {
+        margin-bottom: 0;
+    }
+
+    .text-mag,
+    .text-vitacard {
+        margin-right: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .vitacard-container {
+        margin-top: 0 !important;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 970px) {
+    .toggle-menu {
+        display: block;
+        left: 3.5rem;
+    }
+
+    .container-logo {
+        left: 5.5rem;
+    }
+
+    .links-menu {
+        flex-direction: column;
+        position: absolute;
+        top: calc(100%);
+        left: 0;
+        width: 100%;
+        background-color: #E6E6E6;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        display: none;
+        z-index: 6;
+    }
+
+        .links-menu.exibir {
+            display: flex;
+        }
+
+        .links-menu a {
+            padding: 0 1rem;
+            color: #000;
+            margin: 0;
+        }
+
+            .links-menu a:hover {
+                text-decoration: underline;
+            }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-mag,
+    .text-mag,
+    .logo-vitacard-ft,
+    .text-vitacard {
+        width: 100%;
+    }
+
+    .text-mag,
+    .text-vitacard {
+        margin-right: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .vitacard-container {
+        margin-top: 0 !important;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 320px) {
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 0.8rem;
+    }
+
+    .conteudo-banner {
+        margin-bottom: 0;
+    }
+
+    .destaque {
+        margin-top: 0;
+    }
+
+    .destaque-texto h2 {
+        font-size: 1.7rem;
+    }
+
+    .destaque-texto p {
+        font-size: 0.8rem;
+    }
+
+    .beneficios-titulo {
+        font-size: 1.7rem;
+    }
+
+    .tipos-beneficios {
+        padding: 0.5rem 1rem;
+    }
+
+    .tipo-beneficio-titulo {
+        font-size: 1rem;
+    }
+
+    .tipo-beneficio-descricao {
+        font-size: 0.7rem;
+    }
+
+    .tipos-beneficios-center {
+        margin-top: 0.5rem;
+    }
+
+    .tipos-beneficios-center {
+        margin-top: 0;
+        padding: 0.5rem 1rem;
+    }
+
+    .tipo-beneficio {
+        padding: 0.5rem;
+    }
+
+    .botao-beneficio {
+        font-size: 0.7rem;
+    }
+
+    .botao-chamada {
+        font-size: 0.6rem;
+        padding: 0.4rem 0.6rem; 
+        white-space: nowrap; 
+    }
+
+    .phrase-text {
+        font-size: 1.7rem;
+    }
+
+    .planos-titulo {
+        font-size: 2rem;
+    }
+
+    .secao-planos {
+        margin-top: 1rem;
+        padding: 0;
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+        padding: 0 1rem;
+    }
+
+    .plano-cartao {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .plano-titulo {
+        font-size: 1.2rem;
+    }
+
+    .plano-preco {
+        font-size: 1rem;
+    }
+
+    .plano-beneficios li {
+        font-size: 0.8rem;
+    }
+
+    .botao-planos {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.6rem;
+    }
+}
