@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaCard Benefícios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon_vitacard.png" />
+</head>
+<body>
+    <div class="pagina">
+        <header class="linha-superior px-4">
+            <div class="container-logo">
+                <a href="index.html" class="link-logo">
+                    <img src="img/logo_vitacard.png" alt="Logo" class="imagem-logo" />
+                </a>
+            </div>
+
+            <div class="toggle-menu cursor-pointer" onclick="AlternarMenu()">
+                <span class="oi oi-menu" aria-hidden="true"></span>
+            </div>
+
+            <nav id="links-menu" class="links-menu">
+                <a href="index.html">INÍCIO</a>
+                <a href="#sobre">SOBRE</a>
+                <a href="#beneficios-e-vantagens">BENEFÍCIOS E VANTAGENS</a>
+                <a href="#planos">PLANOS</a>
+            </nav>
+        </header>
+
+        <main>
+            <article class="conteudo px-4">
+                <div class="conteudo-corpo">
+                    <div class="container">
+                        <div class="conteudo-banner">
+                            <h1 class="titulo">Cartão de Benefícios</h1>
+                            <h1 class="titulo">VitaCard</h1>
+                            <p class="subtitulo">
+                                Desfrute de benefícios exclusivos e serviços essenciais para sua vida!<br />
+                                Junte-se à VitaCard e aproveite as vantagens especiais<br />
+                                criadas para você e seus funcionários.
+                            </p>
+                            <div class="botao-beneficios">
+                                <a href="#beneficios-e-vantagens" class="botao-beneficio">BENEFÍCIOS E VANTAGENS</a>
+                            </div>
+                        </div>
+                        <div class="banner-principal">
+                            <img src="img/banner_principal.jpg" alt="Homem sorrindo apontando e apontando para a esquerda." />
+                        </div>
+
+                        <div id="sobre" class="destaque">
+                            <div class="imagem-destaque">
+                                <img src="img/imagem_destaque.jpg" alt="Família sorrindo e se abraçando. Pai segurando a filha e o filho no colo e mãe ao lado." />
+                            </div>
+                            <div class="destaque-texto">
+                                <h2>Tranquilidade para você<br />e para quem você ama!</h2>
+                                <p>
+                                    Nosso objetivo é proporcionar segurança, conveniência e economia aos nossos associados por meio de uma variedade de serviços cuidadosamente selecionados. Entre os benefícios que oferecemos estão seguro de vida, assistência residencial, descontos em medicamentos, telemedicina e assistência em cesta básica.
+                                    <br /><br />
+                                    Trabalhamos incansavelmente para garantir que cada associado tenha acesso a benefícios que realmente façam a diferença em suas vidas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="beneficios-e-vantagens" class="beneficios">
+                            <h1 class="beneficios-titulo">Benefícios e vantagens</h1>
+                            <div class="tipos-beneficios">
+                                <div class="tipo-beneficio">
+                                    <ion-icon name="sunny-outline"></ion-icon>
+                                    <h2 class="tipo-beneficio-titulo">SEU DIA A DIA</h2>
+                                    <p class="tipo-beneficio-descricao">
+                                        Assistência Residencial Premium<br />
+                                        Assistência Alimentação<br />
+                                        Sorteios Mensais
+                                    </p>
+                                </div>
+                                <div class="tipo-beneficio">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                    <h2 class="tipo-beneficio-titulo">SUA VIDA</h2>
+                                    <p class="tipo-beneficio-descricao">
+                                        Seguro AP Morte e Invalidez<br />
+                                        Seguro de Vida<br />
+                                        Assistência Funeral<br />
+                                        Assistência Natalidade<br />
+                                        Cesta Natalidade
+                                    </p>
+                                </div>
+                                <div class="tipo-beneficio">
+                                    <ion-icon name="medkit-outline"></ion-icon>
+                                    <h2 class="tipo-beneficio-titulo">SUA SAÚDE</h2>
+                                    <p class="tipo-beneficio-descricao">
+                                        Telemedicina<br />
+                                        Desconto em Medicamentos<br />
+                                        Psicólogo<br />
+                                        Nutricionista
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="beneficios">
+                            <div class="tipos-beneficios-center">
+                                <div class="tipo-beneficio">
+                                    <ion-icon name="car-outline"></ion-icon>
+                                    <h2 class="tipo-beneficio-titulo">SEU CARRO</h2>
+                                    <p class="tipo-beneficio-descricao">
+                                        Assistência Auto Premium
+                                    </p>
+                                </div>
+                                <div class="tipo-beneficio">
+                                    <ion-icon name="paw-outline"></ion-icon>
+                                    <h2 class="tipo-beneficio-titulo">SEU PET</h2>
+                                    <p class="tipo-beneficio-descricao">
+                                        Assistência Pet
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="botao-planos-container">
+                            <a href="#planos" class="botao-chamada">Adquira já um de nossos planos!</a>
+                        </div>
+
+                        <div class="secao-frase">
+                            <div class="imagem-container">
+                                <img src="img/banner_secundario.jpg" alt="Banner Secundário" class="banner-secundario">
+                                <div class="overlay"></div>
+                                <h1 class="phrase-text">Cobertura completa para sua família e economia para o seu bolso!</h1>
+                                <img src="img/logo_vitacard.png" alt="Logo VitaCard" class="logo-vitacard">
+                            </div>
+                        </div>
+
+                        <div id="planos" class="secao-planos">
+                            <h1 class="planos-titulo">PLANOS</h1>
+                            <div class="plano-cartao">
+                                <h3 class="plano-titulo">VITACARD BÁSICO</h3>
+                                <p class="plano-preco">R$ 39,90/mensal</p>
+                                <ul class="plano-beneficios">
+                                    <li>Assistência Alimentação</li>
+                                    <li>1 Sorteio Mensal</li>
+                                    <li>Telemedicina</li>
+                                    <li>Psicólogo</li>
+                                    <li>Nutricionista</li>
+                                    <li>AP Morte e Invalidez (R$ 10.000)</li>
+                                    <li>Seguro de Vida (R$ 10.000)</li>
+                                    <li>Assistência Funeral (R$ 3.500)</li>
+                                    <li class="strikethrough">Assistência Residencial Premium</li>
+                                    <li class="strikethrough">Desconto em Medicamentos</li>
+                                    <li class="strikethrough">Assistência Natalidade (R$500)</li>
+                                    <li class="strikethrough">Assistência Auto Premium</li>
+                                    <li class="strikethrough">Assistência Pet</li>
+                                    <li class="strikethrough">Cesta Natalidade</li>
+                                </ul>
+                                <button class="botao-planos">Adquirir plano</button>
+                            </div>
+                            <div class="plano-cartao">
+                                <h3 class="plano-titulo">VITACARD ASSISTENCIAL</h3>
+                                <p class="plano-preco">R$ 59,90/mensal</p>
+                                <ul class="plano-beneficios">
+                                    <li>Assistência Residencial Premium</li>
+                                    <li>Assistência Alimentação</li>
+                                    <li>4 Sorteios Mensais</li>
+                                    <li>Telemedicina</li>
+                                    <li>Desconto em Medicamentos</li>
+                                    <li>Psicólogo</li>
+                                    <li>Nutricionista</li>
+                                    <li>AP Morte e Invalidez (R$ 15.000)</li>
+                                    <li>Seguro de Vida (R$ 15.000)</li>
+                                    <li>Assistência Funeral (R$ 5.500)</li>
+                                    <li>Assistência Natalidade (R$500)</li>
+                                    <li class="strikethrough">Assistência Auto Premium</li>
+                                    <li class="strikethrough">Assistência Pet</li>
+                                    <li class="strikethrough">Cesta Natalidade</li>
+                                </ul>
+                                <button class="botao-planos">Adquirir plano</button>
+                            </div>
+                            <div class="plano-cartao">
+                                <h3 class="plano-titulo">VITACARD MAIS</h3>
+                                <p class="plano-preco">R$ 79,90/mensal</p>
+                                <ul class="plano-beneficios">
+                                    <li>Assistência Residencial Premium</li>
+                                    <li>Assistência Alimentação</li>
+                                    <li>4 Sorteios Mensais</li>
+                                    <li>Assistência Auto Premium</li>
+                                    <li>Telemedicina</li>
+                                    <li>Desconto em Medicamentos</li>
+                                    <li>Psicólogo</li>
+                                    <li>Nutricionista</li>
+                                    <li>Assistência Pet</li>
+                                    <li>AP Morte e Invalidez (R$ 20.000)</li>
+                                    <li>Seguro de Vida (R$ 20.000)</li>
+                                    <li>Assistência Funeral (R$ 7.000)</li>
+                                    <li>Assistência Natalidade (R$700)</li>
+                                    <li>Cesta Natalidade</li>
+                                </ul>
+                                <button class="botao-planos">Adquirir plano</button>
+                            </div>
+                        </div>
+
+                        <div class="secao-final">
+                            <h1>Foque no essencial e deixe o resto por nossa conta!</h1>
+                        </div>
+                    </div>
+                </div>
+            </article>        
+        </main>
+
+        <footer class="footer px-4">
+            <div class="container-footer">
+                <div class="vitacard-container">
+                    <div class="logo-vitacard-ft">
+                        <img src="img/logo_vitacard.png" alt="Logo VitaCard" />
+                    </div>
+                    <div class="text-vitacard">
+                        <p>
+                            <strong>Atendimento VitaCard:</strong>
+                            atendimento@vitacardservidores.com.br
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/ionicons.min.js"></script>
+    <script>
+        function AlternarMenu() {
+            const linksMenu = document.getElementById('links-menu');
+            linksMenu.classList.toggle('exibir');
+        }
+    </script>
+</body>
+</html>
